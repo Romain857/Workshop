@@ -29,12 +29,15 @@
           <a class="dropdown-item" href="#">Sociétés</a>         
         </div>
       </li>
-      
-      <li class="nav-item">
+        <li class="nav-item">
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">deconnexion</a>
       </li>
-      <img class="image" src="Logo_WS_black.png" alt="">
     </ul>
+
+
+
+
+
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
@@ -46,16 +49,25 @@
     <?php 
         require_once 'vendor/autoload.php';
 
+
+
         use League\Csv\Reader;
 
 //load the CSV document from a file path
-$csv = Reader::createFromPath('donnees_produits pétroliers_2017.csv', 'r');
+$csv = Reader::createFromPath('donnees_gaz_2017.csv', 'r');
 $csv->setHeaderOffset(0);
 
 $header = $csv->getHeader(); //returns the CSV header record
 $records = $csv->getRecords(); //returns all the CSV records as an Iterator object
 
-echo $csv->getContent(); //returns the CSV document as a string
+//    var_dump($header);
+/*
+foreach ($records as $ligne){
+    var_dump($ligne);
+
+};
+*/
+
     ?>
 </body>
 </html>
