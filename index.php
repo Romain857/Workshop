@@ -2,7 +2,7 @@
 
 
     <main>
-
+        
         <?php use League\Csv\Reader;
 
         //load the CSV document from a file path
@@ -12,11 +12,12 @@
         $header = $csv->getHeader(); //returns the CSV header record
         $records = $csv->getRecords(); //returns all the CSV records as an Iterator object
 
-        var_dump($header);
+            var_dump($header);
+        /*
         foreach ($records as $ligne){
             var_dump($ligne);
 
-        }; ?>
+        };  */ ?>
 
     </main>
 
