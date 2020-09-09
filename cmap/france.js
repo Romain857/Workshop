@@ -11,8 +11,8 @@ License: non-comercial
 		var maphover_fill = "#778899";	// Couleur de survol au passage de la souris
 		var mapstroke = "#000000";		// Couleur des lignes de séparation des régions
 		var mapstroke_width = 1.2;		// Epaisseur des lignes de séparation des régions (en points)
-		var mapWidth=1500;				// Largeur de la carte en pixels
-		var mapHeight=500;				// Hauteur de la carte en pixels (facultatif)
+		var mapWidth=500;				// Largeur de la carte en pixels
+		var mapHeight=175;				// Hauteur de la carte en pixels (facultatif)
 		
 
 /*
@@ -22,10 +22,10 @@ Modifiez ci-dessous les 2 variables pour chaque région :
 	
 	url:	" Lien vers la page ou le site souhaité ";
 
-*/		
+*/
 var paths = {
 
-Z001: {
+Z1: {
 title: "Grand-Est",
 url: "#"
 },

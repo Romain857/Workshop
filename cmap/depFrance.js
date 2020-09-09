@@ -6,41 +6,41 @@ var mapWidth=1500;				// Largeur de la carte en pixels
 var mapHeight=500;				// Hauteur de la carte en pixels (facultatif)
 
 
-var paths = {
+var path = {
 
-    Z1: {
+    Z01: {
         title: "Ain",
         url: "#"
     },
-    Z2: {
+    Z02: {
         title: "Eure-et-Loire",
         url: "#"
     },
-    Z3: {
+    Z03: {
         title: "Finistère",
         url: "#"
     },
-    Z4: {
+    Z04: {
         title: "Gard",
         url: "#"
     },
-    Z5: {
+    Z05: {
         title: "Haute-Garonne",
         url: "#"
     },
-    Z6: {
+    Z06: {
         title: "Gers",
         url: "#"
     },
-    Z7: {
+    Z07: {
         title: "Gironde",
         url: "#"
     },
-    Z8: {
+    Z08: {
         title: "Hérault",
         url: "#"
     },
-    Z9: {
+    Z09: {
         title: "Ille-et-Vilaine",
         url: "#"
     },
@@ -81,6 +81,14 @@ var paths = {
     },
     Z19: {
         title: "Loiret",
+        url: "#"
+    },
+    Z2A: {
+        title: "Corse-du-sud",
+        url: "#"
+    },
+    Z2B: {
+        title: "Haute-Corse",
         url: "#"
     },
     Z20: {
