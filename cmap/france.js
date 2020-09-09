@@ -24,54 +24,55 @@ Modifiez ci-dessous les 2 variables pour chaque région :
 
 */		
 var paths = {
-Z1: {
+
+Z001: {
 title: "Grand-Est",
 url: "#"
 },
-Z2: {
+Z002: {
 title: "Nouvelle-Aquitaine",
 url: "#"
 },
-Z3: {
+Z003: {
 title: "Auvergne-Rhône-Alpes",
 url: "#"
 },
-Z4: {
+Z004: {
 title: "Bourgogne-Franche-Comté",
 url: "#"
 },
-Z5: {
+Z005: {
 title: "Bretagne",
 url: "#"
 },
-Z6: {
+Z006: {
 title: "Centre",
 url: "#"
 },
-Z7: {
+Z007: {
 title: "Corse",
 url: "#"
 },
-Z8: {
+Z008: {
 title: "Occitanie",
 url: "#"
 },
-Z9: {
+Z009: {
 title: "Ile-de-France",
 url: "#"
 },
-Z10: {
+Z0010: {
 title: "Hauts-de-France",
 },
-Z11: {
+Z0011: {
 title: "Normandie",
 url: "#"
 },
-Z12: {
+Z0012: {
 title: "Pays-de-la-Loire",
 url: "#"
 },
-Z13: {
+Z0013: {
 title: "Provence-Alpes-Côte-d-Azur",
 url: "#"
 }
