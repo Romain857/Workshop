@@ -27,6 +27,7 @@ require_once 'layout/header.php';
 
             $resultats=$r->fetchAll();
 
+            var_dump($resultats);
     foreach ($resultats as $ligne) {
         ?>
 
