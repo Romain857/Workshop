@@ -7,7 +7,7 @@ body{
     width: 200px;
     padding: center;
     margin-right: 400px;
-    margin-left: 350px;
+    margin-left: 250px;
 }
 
 .menu{
@@ -39,4 +39,28 @@ body{
     stroke: #bada55;
   }
   
+.menu{
+  text-align: center;
+  font-size: 21px;
+}
 
+.shoes{
+  position: relative;
+  
+  float: right;
+}
+
+.notice{
+  width: 50%;
+  text-align: left;
+  font-size: 20px;
+  margin-left: 50px;
+  
+}
+
+.page{
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  
+}
