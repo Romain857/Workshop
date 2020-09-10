@@ -2,7 +2,7 @@
 
 $db = new PDO("mysql:host=" . Config::SERVEUR . ";dbname=" . Config::BASEDEDONNEES, Config::UTILISATEUR, Config::MOTDEPASSE);
 
-$r = $db->prepare("select region.NCC, region.POP, SUM(donnees_gaz.CONSOR) as \"donnees_gaz\" from donnees_gaz
+$r = $db->prepare("select region.NCC, region.POP, region.REGION, SUM(donnees_gaz.CONSOR) as \"donnees_gaz\" from donnees_gaz
                                 join departement on departement.Dep = donnees_gaz.Dep
                                 join region on region.region = departement.region
                                 GROUP BY REGION.REGION
@@ -11,7 +11,7 @@ $r->execute();
 $results_gaz = $r->fetchAll();
 
 
-$r = $db->prepare(" select region.NCC, region.POP,SUM(donnees_elec.CONSOR) as \"donnees_elec\" from donnees_elec
+$r = $db->prepare(" select region.NCC, region.POP,region.REGION,SUM(donnees_elec.CONSOR) as \"donnees_elec\" from donnees_elec
                                     join departement on departement.Dep = donnees_elec.Dep
                                     join region on region.region = departement.region
                                     
@@ -21,7 +21,7 @@ $r->execute();
 $results_elec = $r->fetchAll();
 
 
-$r = $db->prepare(" select region.NCC, region.POP, SUM(donnees_petrole.SUPER_SANS_PLOMB) as \"donnees_ssp\" from donnees_petrole
+$r = $db->prepare(" select region.NCC, region.POP, region.REGION,SUM(donnees_petrole.SUPER_SANS_PLOMB) as \"donnees_ssp\" from donnees_petrole
                                 join departement on departement.Dep = donnees_petrole.Dep
                                 join region on region.region = departement.region
                                 GROUP BY REGION.NCC
@@ -30,7 +30,7 @@ $r->execute();
 //$r->debugDumpParams();
 $results_ssp = $r->fetchAll();
 
-$r = $db->prepare(" select region.NCC, region.POP, SUM(donnees_petrole.GAZOLE) as \"donnees_gazol\" from donnees_petrole
+$r = $db->prepare(" select region.NCC, region.POP, region.REGION,SUM(donnees_petrole.GAZOLE) as \"donnees_gazol\" from donnees_petrole
                                 join departement on departement.Dep = donnees_petrole.Dep
                                 join region on region.region = departement.region
                                 GROUP BY REGION.NCC
@@ -83,12 +83,18 @@ $tab["gazol"] = $results_gazol;
             foreach ($results_elec as $index => $lign) {
                 $stats_elec[$index]["donnees_elec"] = intval(intval($lign["donnees_elec"]) / intval($lign["POP"]));
                 $stats_elec[$index]["NCC"] = $lign["NCC"];
+                $stats_elec[$index]["Region"] = $lign["REGION"];
+
             }
 
             asort($stats_elec);
-            $stats_elec = array_values(array_filter($stats_elec));
+            $stats_elec_sort = array_values(array_filter($stats_elec));
 
-            foreach ($stats_elec as $index => $lign) {
+            foreach ($stats_elec_sort as $index => $lign){
+                $stats_elec_sort[$index]["classement"] = $index + 1;
+            }
+
+            foreach ($stats_elec_sort as $index => $lign) {
                 echo "<tr>";
                 echo "<td>" . $index . "</td>";
                 echo "<td>" . $lign["NCC"] . "</td>";
@@ -113,12 +119,17 @@ $tab["gazol"] = $results_gazol;
             foreach ($results_gaz as $index => $lign) {
                 $stats_gaz[$index]["donnees_gaz"] = intval(intval($lign["donnees_gaz"]) / intval($lign["POP"]));
                 $stats_gaz[$index]["NCC"] = $lign["NCC"];
+                $stats_gaz[$index]["Region"] = $lign["REGION"];
             }
 
             asort($stats_gaz);
-            $stats_gaz = array_values(array_filter($stats_gaz));
+            $stats_gaz_sort = array_values(array_filter($stats_gaz));
 
-            foreach ($stats_gaz as $index => $lign) {
+            foreach ($stats_gaz_sort as $index => $lign){
+                $stats_gaz_sort[$index]["classement"] = $index + 1;
+            }
+
+            foreach ($stats_gaz_sort as $index => $lign) {
                 echo "<tr>";
                 echo "<td>" . $index . "</td>";
                 echo "<td>" . $lign["NCC"] . "</td>";
@@ -143,12 +154,17 @@ $tab["gazol"] = $results_gazol;
             foreach ($results_ssp as $index => $lign) {
                 $stats_ssp[$index]["donnees_ssp"] = intval(intval($lign["donnees_ssp"]));
                 $stats_ssp[$index]["NCC"] = $lign["NCC"];
+                $stats_ssp[$index]["Region"] = $lign["REGION"];
             }
 
             asort($stats_ssp);
-            $stats_ssp = array_values(array_filter($stats_ssp));
+            $stats_ssp_sort = array_values(array_filter($stats_ssp));
 
-            foreach ($stats_ssp as $index => $lign) {
+            foreach ($stats_ssp_sort as $index => $lign){
+                $stats_ssp_sort[$index]["classement"] = $index + 1;
+            }
+
+            foreach ($stats_ssp_sort as $index => $lign) {
                 echo "<tr>";
                 echo "<td>" . $index . "</td>";
                 echo "<td>" . $lign["NCC"] . "</td>";
@@ -172,15 +188,22 @@ $tab["gazol"] = $results_gazol;
             </thead>
             <tbody>
             <?php
+
             foreach ($results_gazol as $index => $lign) {
                 $stats_gazol[$index]["donnees_gazol"] = intval(intval($lign["donnees_gazol"]));
                 $stats_gazol[$index]["NCC"] = $lign["NCC"];
+                $stats_gazol[$index]["Region"] = $lign["REGION"];
             }
 
             asort($stats_gazol);
-            $stats_gazol = array_values(array_filter($stats_gazol));
+            $stats_gazol_sort = array_values(array_filter($stats_gazol));
 
-            foreach ($stats_gazol as $index => $lign) {
+            foreach ($stats_gazol_sort as $index => $lign){
+                $stats_gazol_sort[$index]["classement"] = $index + 1;
+            }
+
+
+            foreach ($stats_gazol_sort as $index => $lign) {
                 echo "<tr>";
                 echo "<td>" . $index . "</td>";
                 echo "<td>" . $lign["NCC"] . "</td>";
@@ -191,6 +214,7 @@ $tab["gazol"] = $results_gazol;
         </table>
     </main>
 <?php
+
 /*//var_dump($tab);
 foreach ($tab as $data) {
     echo "<tr>";
