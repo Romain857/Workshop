@@ -7,21 +7,20 @@ Author: S.Marmion ©2015
 Author URI: http://www.cmap.comersis.com
 License: non-comercial
 */
-		var maphover_fill = "#ffffff";	// Couleur de survol au passage de la souris
-		var mapstroke = "#000000";		// Couleur des lignes de séparation des régions
-		var mapstroke_width = 1.2;		// Epaisseur des lignes de séparation des régions (en points)
-		var mapWidth=1500;				// Largeur de la carte en pixels
-		var mapHeight=500;				// Hauteur de la carte en pixels (facultatif)
+var maphover_fill = "#ffffff";	// Couleur de survol au passage de la souris
+var mapstroke = "#000000";		// Couleur des lignes de séparation des régions
+var mapstroke_width = 1.2;		// Epaisseur des lignes de séparation des régions (en points)
+var mapWidth=1500;				// Largeur de la carte en pixels
+var mapHeight=500;				// Hauteur de la carte en pixels (facultatif)
 
 
 
 /*
 Modifiez ci-dessous les 2 variables pour chaque région :
-	
-	title:	" Texte associé à la région ";
-	
-	url:	" Lien vers la page ou le site souhaité ";
 
+title:	" Texte associé à la région ";
+
+url:	" Lien vers la page ou le site souhaité ";
 */		
 var path = {
 Z1: {
@@ -35,23 +34,23 @@ popu:9
 Z3: {
 title: "Auvergne-Rhône-Alpes",
 url: "#",
-	popu:5
+popu:5
 },
 Z4: {
 title: "Bourgogne-Franche-Comté",
 url: "#",
-	popu:12
+popu:12
 
 },
 Z5: {
 title: "Bretagne",
 url: "#",
-	popu:6
+popu:6
 },
 Z6: {
 title: "Centre",
 url: "#",
-	popu:0
+popu:0
 },
 Z7: {
 title: "Corse",
@@ -60,21 +59,21 @@ popu: 0
 Z8: {
 title: "Occitanie",
 url: "#",
-	popu:6
+popu:6
 },
 Z9: {
 title: "Ile-de-France",
 url: "#",
-	popu:8
+popu:8
 },
 Z10: {
 title: "Hauts-de-France",
-	popu:2
+popu:2
 },
 Z11: {
 title: "Normandie",
 url: "#",
-	popu:11
+popu:11
 },
 Z12: {
 title: "Pays-de-la-Loire",
@@ -84,6 +83,6 @@ popu:1
 Z13: {
 title: "Provence-Alpes-Côte-d-Azur",
 url: "#",
-	popu:4
+popu:4
 }
 }
