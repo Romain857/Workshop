@@ -32,10 +32,10 @@ function TipFunction(texte) {
 		var titl = path[zone].title;
 		var color;
 	
-		if(path[zone].popu>0 && path[zone].popu<=4) {
+		if(path[zone].popu>0 && path[zone].popu<=3) {
 			color = 'green'
 			}
-		else if(path[zone].popu>4 && path[zone].popu<=8) {
+		else if(path[zone].popu>3 && path[zone].popu<=7) {
 			color = 'orange'
 		}
 		else if(path[zone].popu===0){

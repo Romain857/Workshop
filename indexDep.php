@@ -54,6 +54,7 @@ select region.NCC, region.POP, 0 as "donnees_gaz", 0 as "donnees_elec", SUM(donn
     join region on region.region = departement.region
     GROUP BY REGION.NCC
 ");
+
 $r->execute();
 //$r->debugDumpParams();
 $results = $r->fetchAll();
@@ -63,12 +64,16 @@ $tab["ssp"] = $results_ssp;
 $tab["gazol"] = $results_gazol;
 */
 ?>
+
     <main class="container">
+        <form action="carteDepELEC.php">
+            <button type="submit" class="btn btn-success">Aller à la carte <i class="fas fa-map"></i></button>
+        </form>
         <table class="table">
             <thead>
             <tr>
                 <th>Classement</th>
-                <th>Region</th>
+                <th>Département</th>
                 <!--                <th>Consommation de gaz par an par personne en MWh</th>-->
                 <th>Consommation d'éléctricité en MWh par personne par an</th>
                 <!--                <th>Consommation de SUPER SANS PLOMB en tonne par an</th>-->
@@ -100,14 +105,18 @@ $tab["gazol"] = $results_gazol;
             } ?>
             </tbody>
         </table>
+
     </main>
 
     <main class="container">
+        <form action="carteDepGAZ.php">
+            <button type="submit" class="btn btn-success">Aller à la carte <i class="fas fa-map"></i></button>
+        </form>
         <table class="table">
             <thead>
             <tr>
                 <th>Classement</th>
-                <th>Region</th>
+                <th>Département</th>
                 <th>Consommation de gaz en MWh par personne par an</th>
             </tr>
             </thead>
@@ -138,11 +147,14 @@ $tab["gazol"] = $results_gazol;
     </main>
 
     <main class="container">
+        <form action="carteDepSSP.php">
+            <button type="submit" class="btn btn-success">Aller à la carte <i class="fas fa-map"></i></button>
+        </form>
         <table class="table">
             <thead>
             <tr>
                 <th>Classement</th>
-                <th>Region</th>
+                <th>Département</th>
                 <th>Consommation de SUPER SANS PLOMB en tonne par an</th>
             </tr>
             </thead>
@@ -173,11 +185,14 @@ $tab["gazol"] = $results_gazol;
     </main>
 
     <main class="container">
+        <form action="carteDep.php">
+            <button type="submit" class="btn btn-success">Aller à la carte <i class="fas fa-map"></i></button>
+        </form>
         <table class="table">
             <thead>
             <tr>
                 <th>Classement</th>
-                <th>Region</th>
+                <th>Département</th>
                 <th>Consommation de GAZOL en tonne par an</th>
                 <!--                <th>Consommation de SUPER SANS PLOMB en tonne par an</th>-->
                 <!--                <th>Consommation de gazolOL en tonne par an</th>-->
@@ -198,6 +213,7 @@ $tab["gazol"] = $results_gazol;
             foreach ($stats_gazol_sort as $index => $lign){
                 $stats_gazol_sort[$index]["classement"] = $index + 1;
             }
+
 
 
             foreach ($stats_gazol_sort as $index => $lign) {
@@ -229,7 +245,10 @@ foreach ($tab as $data) {
         }
         echo "</td>";
     }
+
+
     echo "<tr>";
 }
 */
 require_once 'layout/footer.php';
+
