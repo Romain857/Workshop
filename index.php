@@ -232,9 +232,8 @@ foreach ($tab as $data) {
         }
         echo "</td>";
     }
-
-
     echo "<tr>";
 }
 */
 require_once 'layout/footer.php';
+

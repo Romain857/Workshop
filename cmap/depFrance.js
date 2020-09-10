@@ -13,74 +13,75 @@ var path = {
         url: "#"
     },
     Z02: {
-        title: "Eure-et-Loire",
+        title: "Aisne",
         url: "#"
     },
     Z03: {
-        title: "Finistère",
+        title: "Allier",
         url: "#"
     },
     Z04: {
-        title: "Gard",
+        title: "Alpes-de-Haute-Provence",
         url: "#"
     },
     Z05: {
-        title: "Haute-Garonne",
+        title: "Hautes-alpes",
         url: "#"
     },
     Z06: {
-        title: "Gers",
+        title: "Alpes-maritimes",
         url: "#"
     },
     Z07: {
-        title: "Gironde",
+        title: "Ardèche",
         url: "#"
     },
     Z08: {
-        title: "Hérault",
+        title: "Ardennes",
         url: "#"
     },
     Z09: {
-        title: "Ille-et-Vilaine",
-        url: "#"
+        title: "Ariège",
+        url: "https://fr.wikipedia.org/wiki/Ari%C3%A8ge_(d%C3%A9partement)"
     },
     Z10: {
-        title: "Indre",
+        title: "Aube",
     },
     Z11: {
-        title: "Indre-et-Loire",
+        title: "Aude",
         url: "#"
     },
     Z12: {
-        title: "Isère",
+        title: "Aveyron",
         url: "#"
     },
     Z13: {
-        title: "Jura",
-        url: "#"
+        title: "Bouches-du-Rhone",
+        url: "#",
+        pop : ""
     },
     Z14: {
-        title: "Landes",
+        title: "Calvados",
         url: "#"
     },
     Z15: {
-        title: "Loir-et-Cher",
+        title: "Cantal",
         url: "#"
     },
     Z16: {
-        title: "Loire",
+        title: "Charente",
         url: "#"
     },
     Z17: {
-        title: "Haute-Loire",
+        title: "Charente-maritime",
         url: "#"
     },
     Z18: {
-        title: "Loire-Atlantique",
+        title: "Cher",
         url: "#"
     },
     Z19: {
-        title: "Loiret",
+        title: "Corrèze",
         url: "#"
     },
     Z2A: {
@@ -91,304 +92,299 @@ var path = {
         title: "Haute-Corse",
         url: "#"
     },
-    Z20: {
-        title: "Lot",
-        url: "#"
-    },
     Z21: {
-        title: "Lot-et-Garonne",
+        title: "Cotes-d'Or",
         url: "#"
     },
     Z22: {
-        title: "Lozère",
+        title: "Cotes-dArmor",
         url: "#"
     },
     Z23: {
-        title: "Maine-et-Loire",
+        title: "Creuse",
+        url: "#"
     },
     Z24: {
-        title: "Manche",
-        url: "#"
+        title: "Dordogne",
     },
     Z25: {
-        title: "Marne",
-        url: "#"
-    },
-    Z26: {
-        title: "Haute-Marne",
-        url: "#"
-    },
-
-    Z27: {
-        title: "Alpes-de-Haute-Provence",
-        url: "#"
-    },
-    Z28: {
-        title: "Hautes-Alpes",
-        url: "#"
-    },
-    Z29: {
-        title: "Alpes-Maritimes",
-        url: "#"
-    },
-    Z30: {
-        title: "Ardèche",
-        url: "#"
-    },
-    Z31: {
-        title: "Ardennes",
-        url: "#"
-    },
-    Z32: {
-        title: "Ariège",
-        url: "#"
-    },
-    Z33: {
-        title: "Aube",
-    },
-    Z34: {
-        title: "Aude",
-        url: "#"
-    },
-    Z35: {
-        title: "Aveyron",
-        url: "#"
-    },
-    Z36: {
-        title: "Bouches-du-Rhône",
-        url: "#"
-    },
-    Z37: {
-        title: "Calvados",
-        url: "#"
-    },
-    Z38: {
-        title: "Charente",
-        url: "#"
-    },
-    Z39: {
-        title: "Charente-Maritime",
-        url: "#"
-    },
-    Z40: {
-        title: "Cher",
-        url: "#"
-    },
-    Z41: {
-        title: "Corrèze",
-        url: "#"
-    },
-    Z42: {
-        title: "Corse-du-sud",
-        url: "#"
-    },
-    Z43: {
-        title: "Haute-Corse",
-        url: "#"
-    },
-    Z44: {
-        title: "Côte-d'Or",
-        url: "#"
-    },
-    Z45: {
-        title: "Côtes-d'Armor",
-        url: "#"
-    },
-    Z46: {
-        title: "Creuse",
-    },
-    Z47: {
-        title: "Dordogne",
-        url: "#"
-    },
-    Z48: {
         title: "Doubs",
         url: "#"
     },
-    Z49: {
-        title: "Drôme",
+    Z26: {
+        title: "Drome",
         url: "#"
     },
-
-    Z50: {
+    Z27: {
         title: "Eure",
         url: "#"
     },
-    Z51: {
-        title: "Eure-et-Loire",
+
+    Z28: {
+        title: "Eure-et-loir",
         url: "#"
     },
-    Z52: {
+    Z29: {
         title: "Finistère",
         url: "#"
     },
-    Z53: {
+    Z30: {
         title: "Gard",
         url: "#"
     },
-    Z54: {
-        title: "Haute-Garonne",
+    Z31: {
+        title: "Haute-garonne",
         url: "#"
     },
-    Z55: {
+    Z32: {
         title: "Gers",
         url: "#"
     },
-    Z56: {
+    Z33: {
         title: "Gironde",
         url: "#"
     },
-    Z57: {
+    Z34: {
         title: "Hérault",
+    },
+    Z35: {
+        title: "Ille-et-vilaine",
         url: "#"
     },
-    Z58: {
-        title: "Ille-et-Vilaine",
-        url: "#"
-    },
-    Z59: {
+    Z36: {
         title: "Indre",
-    },
-    Z60: {
-        title: "Indre-et-Loire",
         url: "#"
     },
-    Z61: {
+    Z37: {
+        title: "Inde-et-loire",
+        url: "#"
+    },
+    Z38: {
         title: "Isère",
         url: "#"
     },
-    Z62: {
+    Z39: {
         title: "Jura",
         url: "#"
     },
-    Z63: {
+    Z40: {
         title: "Landes",
         url: "#"
     },
+    Z41: {
+        title: "Loire-et-cher",
+        url: "#"
+    },
+    Z42: {
+        title: "Loire",
+        url: "#"
+    },
+    Z43: {
+        title: "Haute-loire",
+        url: "#"
+    },
+    Z44: {
+        title: "Loire-atlantique",
+        url: "#"
+    },
+    Z45: {
+        title: "Loiret",
+        url: "#"
+    },
+    Z46: {
+        title: "Lot",
+        url: "#"
+    },
+    Z47: {
+        title: "Lot-et-garonne",
+    },
+    Z48: {
+        title: "Lozère",
+        url: "#"
+    },
+    Z49: {
+        title: "Maine-et-loire",
+        url: "#"
+    },
+    Z50: {
+        title: "Manche",
+        url: "#"
+    },
+
+    Z51: {
+        title: "Marne",
+        url: "#"
+    },
+    Z52: {
+        title: "Haute-marne",
+        url: "#"
+    },
+    Z53: {
+        title: "Mayenne",
+        url: "#"
+    },
+    Z54: {
+        title: "Meurthe-et-moselle",
+        url: "#"
+    },
+    Z55: {
+        title: "Meuse",
+        url: "#"
+    },
+    Z56: {
+        title: "Morbihan",
+        url: "#"
+    },
+    Z57: {
+        title: "Moselle",
+        url: "#"
+    },
+    Z58: {
+        title: "Nièvre",
+        url: "#"
+    },
+    Z59: {
+        title: "Nord",
+        url: "#"
+    },
+    Z60: {
+        title: "Oise",
+    },
+    Z61: {
+        title: "Orne",
+        url: "#"
+    },
+    Z62: {
+        title: "Pas-de-calais",
+        url: "#"
+    },
+    Z63: {
+        title: "Puy-du-dome",
+        url: "#"
+    },
     Z64: {
-        title: "Loir-et-Cher",
+        title: "Pyrénées-atlantiques",
         url: "#"
     },
     Z65: {
-        title: "Loire",
+        title: "Hautes-Pyrénées",
         url: "#"
     },
     Z66: {
-        title: "Haute-Loire",
+        title: "Pyrénées-orientales",
         url: "#"
     },
     Z67: {
-        title: "Loire-Atlantique",
+        title: "Bas-rhin",
         url: "#"
     },
     Z68: {
-        title: "Loiret",
+        title: "Haut-rhin",
         url: "#"
     },
     Z69: {
-        title: "Lot",
+        title: "Rhone",
         url: "#"
     },
     Z70: {
-        title: "Lot-et-Garonne",
+        title: "Haute-saone",
         url: "#"
     },
     Z71: {
-        title: "Lozère",
+        title: "Saone-et-loire",
         url: "#"
     },
     Z72: {
-        title: "Maine-et-Loire",
-    },
-    Z73: {
-        title: "Manche",
+        title: "Sarthe",
         url: "#"
     },
+    Z73: {
+        title: "Savoie",
+    },
     Z74: {
-        title: "Marne",
+        title: "Haute-savoie",
         url: "#"
     },
     Z75: {
-        title: "Haute-Marne",
+        title: "Paris",
         url: "#"
     },
     Z76: {
-        title: "Lot-et-Garonne",
+        title: "Seine-maritime",
         url: "#"
     },
     Z77: {
-        title: "Lozère",
+        title: "Seine-et-marne",
         url: "#"
     },
     Z78: {
-        title: "Maine-et-Loire",
-    },
-    Z79: {
-        title: "Manche",
+        title: "Yvelines",
         url: "#"
     },
+    Z79: {
+        title: "Deux-sèvres",
+    },
     Z80: {
-        title: "Marne",
+        title: "Somme",
         url: "#"
     },
     Z81: {
-        title: "Haute-Marne",
+        title: "Tarn",
         url: "#"
     },
     Z82: {
-        title: "Loir-et-Cher",
+        title: "Tarn-et-garonne",
         url: "#"
     },
     Z83: {
-        title: "Loire",
+        title: "Var",
         url: "#"
     },
     Z84: {
-        title: "Haute-Loire",
+        title: "Vaucluse",
         url: "#"
     },
     Z85: {
-        title: "Loire-Atlantique",
+        title: "Vendée",
         url: "#"
     },
     Z86: {
-        title: "Loiret",
+        title: "Vienne",
         url: "#"
     },
     Z87: {
-        title: "Lot",
+        title: "Haute-vienne",
         url: "#"
     },
     Z88: {
-        title: "Lot-et-Garonne",
+        title: "Vosges",
         url: "#"
     },
     Z89: {
-        title: "Lozère",
+        title: "Yonne",
         url: "#"
     },
     Z90: {
-        title: "Maine-et-Loire",
-    },
-    Z91: {
-        title: "Manche",
+        title: "Territoire-de-belfort",
         url: "#"
     },
+    Z91: {
+        title: "Essonne",
+    },
     Z92: {
-        title: "Marne",
+        title: "Hauts-de-seine",
         url: "#"
     },
     Z93: {
-        title: "Haute-Marne",
+        title: "Seine-Saint-Denis",
         url: "#"
     },
     Z94: {
-        title: "Lot-et-Garonne",
+        title: "Val-de-marne",
         url: "#"
     },
-    Z95:
-        {
-        title: "Lozère",
+    Z95: {
+        title: "Val-doise",
         url: "#"
     }
 }

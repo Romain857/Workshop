@@ -58,7 +58,6 @@ select region.NCC, region.POP, 0 as "donnees_gaz", 0 as "donnees_elec", SUM(donn
 $r->execute();
 //$r->debugDumpParams();
 $results = $r->fetchAll();
-
 $tab["elec"] = $results_elec;
 $tab["gaz"] = $results_gaz;
 $tab["ssp"] = $results_ssp;
@@ -202,6 +201,7 @@ $tab["gazol"] = $results_gazol;
             }
 
 
+
             foreach ($stats_gazol_sort as $index => $lign) {
                 echo "<tr>";
                 echo "<td>" . $index . "</td>";
@@ -237,3 +237,4 @@ foreach ($tab as $data) {
 }
 */
 require_once 'layout/footer.php';
+

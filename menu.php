@@ -33,9 +33,37 @@ require_once 'layout/header.php';
         <p style="color: red;">La régions doit être éco responsable et soucieuse de l'environnement ce qui est retransmis sur la couleur des chaussures </p>
     </div>
     <div>
-    <img class="shoes" src="dist/images/animation_500_kewl71mi.gif" alt="">
+    
+    
+    <div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="dist/images/animation_500_kewl71mi.gif" >
+      <div class="carousel-caption">
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="dist/images/animation_orange.gif">
+         
+    </div>
+    <div class="carousel-item">
+      <img src="dist/images/animation_rouge.gif">
+         
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
 </div>
 </div>
-
+</div>
 
 <?php require_once 'layout/footer.php'; ?>
