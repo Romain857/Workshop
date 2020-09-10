@@ -1,4 +1,3 @@
-var mapfill = "#B0E0E6";		// Couleur de remplissage des régions
 var maphover_fill = "#778899";	// Couleur de survol au passage de la souris
 var mapstroke = "#000000";		// Couleur des lignes de séparation des régions
 var mapstroke_width = 1.2;		// Epaisseur des lignes de séparation des régions (en points)
@@ -10,381 +9,389 @@ var path = {
 
     Z01: {
         title: "Ain",
-        url: "#"
+        popu:61
+
     },
     Z02: {
         title: "Aisne",
-        url: "#"
+        popu:44
     },
     Z03: {
         title: "Allier",
-        url: "#"
+        popu:33
     },
     Z04: {
         title: "Alpes-de-Haute-Provence",
-        url: "#"
+        popu: 7
     },
     Z05: {
         title: "Hautes-alpes",
-        url: "#"
+        popu:6
     },
     Z06: {
         title: "Alpes-maritimes",
-        url: "#"
+        popu:71
     },
     Z07: {
         title: "Ardèche",
-        url: "#"
+        popu:14
     },
     Z08: {
         title: "Ardennes",
-        url: "#"
+        popu:15
     },
     Z09: {
         title: "Ariège",
-        url: "https://fr.wikipedia.org/wiki/Ari%C3%A8ge_(d%C3%A9partement)"
+        popu:4
     },
     Z10: {
         title: "Aube",
+        popu:27
     },
     Z11: {
         title: "Aude",
-        url: "#"
+        popu:37
     },
     Z12: {
         title: "Aveyron",
-        url: "#"
+        popu:19
     },
     Z13: {
         title: "Bouches-du-Rhone",
-        url: "#",
-        pop : ""
+        popu:94
     },
     Z14: {
         title: "Calvados",
-        url: "#"
+        popu:64
     },
     Z15: {
         title: "Cantal",
-        url: "#"
+        popu:3
     },
     Z16: {
         title: "Charente",
-        url: "#"
+        popu:42
     },
     Z17: {
         title: "Charente-maritime",
-        url: "#"
+        popu:74
     },
     Z18: {
         title: "Cher",
-        url: "#"
+        popu:26
     },
     Z19: {
         title: "Corrèze",
-        url: "#"
+        popu:23
     },
     Z2A: {
         title: "Corse-du-sud",
-        url: "#"
+        popu:0
     },
     Z2B: {
         title: "Haute-Corse",
-        url: "#"
+        popu:0
     },
     Z21: {
         title: "Cotes-d'Or",
-        url: "#"
+        popu:52
     },
     Z22: {
         title: "Cotes-dArmor",
-        url: "#"
+        popu:57
     },
     Z23: {
         title: "Creuse",
-        url: "#"
+        popu:5
     },
     Z24: {
         title: "Dordogne",
+        popu:31
     },
     Z25: {
         title: "Doubs",
-        url: "#"
+        popu:49
     },
     Z26: {
         title: "Drome",
-        url: "#"
+        popu:70
     },
     Z27: {
         title: "Eure",
-        url: "#"
+        popu:51
     },
 
     Z28: {
         title: "Eure-et-loir",
-        url: "#"
+        popu:43
     },
     Z29: {
         title: "Finistère",
-        url: "#"
+        popu:75
     },
     Z30: {
         title: "Gard",
-        url: "#"
+        popu:55
     },
     Z31: {
         title: "Haute-garonne",
-        url: "#"
+        popu:85
     },
     Z32: {
         title: "Gers",
-        url: "#"
+        popu:9
     },
     Z33: {
         title: "Gironde",
-        url: "#"
+        popu:90
     },
     Z34: {
         title: "Hérault",
+        popu:86
     },
     Z35: {
         title: "Ille-et-vilaine",
-        url: "#"
+        popu:84
     },
     Z36: {
         title: "Indre",
-        url: "#"
+        popu:18
     },
     Z37: {
         title: "Inde-et-loire",
-        url: "#"
+        popu:47
     },
     Z38: {
         title: "Isère",
-        url: "#"
+        popu:83
     },
     Z39: {
         title: "Jura",
-        url: "#"
+        popu:25
     },
     Z40: {
         title: "Landes",
-        url: "#"
+        popu:38
     },
     Z41: {
         title: "Loire-et-cher",
-        url: "#"
+        popu:30
     },
     Z42: {
         title: "Loire",
-        url: "#"
+        popu:60
     },
     Z43: {
         title: "Haute-loire",
-        url: "#"
+        popu:13
     },
     Z44: {
         title: "Loire-atlantique",
-        url: "#"
+        popu:89
     },
     Z45: {
         title: "Loiret",
-        url: "#"
+        popu:67
     },
     Z46: {
         title: "Lot",
-        url: "#"
+        popu:8
     },
     Z47: {
         title: "Lot-et-garonne",
+        popu:35
     },
     Z48: {
         title: "Lozère",
-        url: "#"
+        popu:1
     },
     Z49: {
         title: "Maine-et-loire",
-        url: "#"
+        popu:72
     },
     Z50: {
         title: "Manche",
-        url: "#"
+        popu:45
     },
 
     Z51: {
         title: "Marne",
-        url: "#"
+        popu:69
     },
     Z52: {
         title: "Haute-marne",
-        url: "#"
+        popu:20
     },
     Z53: {
         title: "Mayenne",
-        url: "#"
+        popu:28
     },
     Z54: {
         title: "Meurthe-et-moselle",
-        url: "#"
+        popu:48
     },
     Z55: {
         title: "Meuse",
-        url: "#"
+        popu:11
     },
     Z56: {
         title: "Morbihan",
-        url: "#"
+        popu:73
     },
     Z57: {
         title: "Moselle",
-        url: "#"
+        popu:65
     },
     Z58: {
         title: "Nièvre",
-        url: "#"
+        popu:10
     },
     Z59: {
         title: "Nord",
-        url: "#"
+        popu:93
     },
     Z60: {
         title: "Oise",
+        popu:68
     },
     Z61: {
         title: "Orne",
-        url: "#"
+        popu:21
     },
     Z62: {
         title: "Pas-de-calais",
-        url: "#"
+        popu:92
     },
     Z63: {
         title: "Puy-du-dome",
-        url: "#"
+        popu:58
     },
     Z64: {
         title: "Pyrénées-atlantiques",
-        url: "#"
+        popu:46
     },
     Z65: {
         title: "Hautes-Pyrénées",
-        url: "#"
+        popu:12
     },
     Z66: {
         title: "Pyrénées-orientales",
-        url: "#"
+        popu:36
     },
     Z67: {
         title: "Bas-rhin",
-        url: "#"
+        popu:77
     },
     Z68: {
         title: "Haut-rhin",
-        url: "#"
+        popu:62
     },
     Z69: {
         title: "Rhone",
-        url: "#"
+        popu:91
     },
     Z70: {
         title: "Haute-saone",
-        url: "#"
+        popu:17
     },
     Z71: {
         title: "Saone-et-loire",
-        url: "#"
+        popu:63
     },
     Z72: {
         title: "Sarthe",
-        url: "#"
+        popu:56
     },
     Z73: {
         title: "Savoie",
+        popu:50
     },
     Z74: {
         title: "Haute-savoie",
-        url: "#"
+        popu:76
     },
     Z75: {
         title: "Paris",
-        url: "#"
+        popu:16
     },
     Z76: {
         title: "Seine-maritime",
-        url: "#"
+        popu:87
     },
     Z77: {
         title: "Seine-et-marne",
-        url: "#"
+        popu:88
     },
     Z78: {
         title: "Yvelines",
-        url: "#"
+        popu:78
     },
     Z79: {
         title: "Deux-sèvres",
+        popu:41
     },
     Z80: {
         title: "Somme",
-        url: "#"
+        popu:52
     },
     Z81: {
         title: "Tarn",
-        url: "#"
+        popu:24
     },
     Z82: {
         title: "Tarn-et-garonne",
-        url: "#"
+        popu:22
     },
     Z83: {
         title: "Var",
-        url: "#"
+        popu:81
     },
     Z84: {
         title: "Vaucluse",
-        url: "#"
+        popu:54
     },
     Z85: {
         title: "Vendée",
-        url: "#"
+        popu:79
     },
     Z86: {
         title: "Vienne",
-        url: "#"
+        popu:38
     },
     Z87: {
         title: "Haute-vienne",
-        url: "#"
+        popu:29
     },
     Z88: {
         title: "Vosges",
-        url: "#"
+        popu:32
     },
     Z89: {
         title: "Yonne",
-        url: "#"
+        popu:34
     },
     Z90: {
         title: "Territoire-de-belfort",
-        url: "#"
+        popu:2
     },
     Z91: {
         title: "Essonne",
+        popu:80
     },
     Z92: {
         title: "Hauts-de-seine",
-        url: "#"
+        popu:40
     },
     Z93: {
         title: "Seine-Saint-Denis",
-        url: "#"
+        popu:59
     },
     Z94: {
         title: "Val-de-marne",
-        url: "#"
+        popu:66
     },
     Z95: {
         title: "Val-doise",
-        url: "#"
+        popu:81
     }
 }

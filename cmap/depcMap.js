@@ -112,10 +112,24 @@ for (var zone in path) {
     var obj = window[zone+'pat'];
     var lnk = path[zone].url;
     var titl = path[zone].title;
+    var color;
+
+    if(path[zone].popu>0 && path[zone].popu<=15) {
+        color = 'green'
+    }
+    else if(path[zone].popu>15 && path[zone].popu<=60) {
+        color = 'orange'
+    }
+    else if(path[zone].popu===0){
+        color = 'grey'
+    } else {
+        color = 'red'
+
+    }
 
     depcMap +='<a xlink:href"'+lnk+'" ';
     depcMap += 'onmouseover=TipFunction(\''+titl+'\') onmouseout=TipFunction(\'\')>';
-    depcMap += '<path id="'+zone+'" title="'+titl+'" d="'+obj+'" stroke="'+mapstroke+'" stroke-width="'+mapstroke_width+'" fill="red"/> ';
+    depcMap += '<path id="'+zone+'" title="'+titl+'" d="'+obj+'" stroke="'+mapstroke+'" stroke-width="'+mapstroke_width+'" fill="'+color+'"/> ';
     depcMap += '</a>';
 }
 

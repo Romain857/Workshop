@@ -27,32 +27,32 @@ var path = {
 
 Z1: {
 title: "Grand-Est",
-popu:3
+popu:7
 },
 Z2: {
 title: "Nouvelle-Aquitaine",
-popu:9
+popu:11
 },
 Z3: {
 title: "Auvergne-Rhône-Alpes",
 url: "#",
-popu:5
+popu:12
 },
 Z4: {
 title: "Bourgogne-Franche-Comté",
 url: "#",
-popu:12
+popu:2
 
 },
 Z5: {
 title: "Bretagne",
 url: "#",
-popu:6
+popu:4
 },
 Z6: {
 title: "Centre",
 url: "#",
-popu:0
+popu:1
 },
 Z7: {
 title: "Corse",
@@ -61,31 +61,31 @@ popu: 0
 Z8: {
 title: "Occitanie",
 url: "#",
-popu:6
+popu:9
 },
 Z9: {
 title: "Ile-de-France",
 url: "#",
-popu:8
+popu:10
 },
 Z10: {
 title: "Hauts-de-France",
-popu:2
+popu:8
 },
 Z11: {
 title: "Normandie",
 url: "#",
-popu:11
+popu:2
 },
 Z12: {
 title: "Pays-de-la-Loire",
 url: "#",
-popu:1
+popu:5
 },
 Z13: {
 title: "Provence-Alpes-Côte-d-Azur",
 url: "#",
-popu:4
+popu:6
 }
 
 }
