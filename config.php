@@ -2,6 +2,7 @@
 // On charge les dépendances
 require_once 'vendor/autoload.php';
 
+// On défini les variables d'environnement
 class config{
     const SERVEUR="localhost";
     const BASEDEDONNEES="workshop";
@@ -9,6 +10,3 @@ class config{
     const MOTDEPASSE="oui";
 }
 
-
-
-// On défini les variables d'environnement
