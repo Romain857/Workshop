@@ -2,12 +2,12 @@
 
     <main>
 
-        <h1>Consommation de GAZOLE par région</h1>
+        <h1>Consommation de gaz par region</h1>
 
         <div id="tip"> </div>
-        <div class="carte" id="cmap"></div>
+        <div class="carte" id="cmapGAZ"></div>
         <script type="text/javascript" src="cmap/france.js"></script>
-        <script type="text/javascript" src="cmap/cmap.js"></script>
+        <script type="text/javascript" src="cmap/cmapGAZ.js"></script>
 
     </main>
 

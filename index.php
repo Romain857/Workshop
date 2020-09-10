@@ -67,11 +67,14 @@ $tab["gazol"] = $results_gazol;
 */
 ?>
     <main class="container">
+        <form action="carteELEC.php">
+            <button type="submit" class="btn btn-success">Aller à la carte <i class="fas fa-map"></i></button>
+        </form>
         <table class="table">
             <thead>
             <tr>
                 <th>Classement</th>
-                <th>Region</th>
+                <th>Région</th>
                 <!--                <th>Consommation de gaz par an par personne en MWh</th>-->
                 <th>Consommation d'éléctricité en MWh par personne par an</th>
                 <!--                <th>Consommation de SUPER SANS PLOMB en tonne par an</th>-->
@@ -106,11 +109,14 @@ $tab["gazol"] = $results_gazol;
     </main>
 
     <main class="container">
+        <form action="carteGAZ.php">
+            <button type="submit" class="btn btn-success">Aller à la carte <i class="fas fa-map"></i></button>
+        </form>
         <table class="table">
             <thead>
             <tr>
                 <th>Classement</th>
-                <th>Region</th>
+                <th>Région</th>
                 <th>Consommation de gaz en MWh par personne par an</th>
             </tr>
             </thead>
@@ -141,11 +147,14 @@ $tab["gazol"] = $results_gazol;
     </main>
 
     <main class="container">
+        <form action="carteSSP.php">
+            <button type="submit" class="btn btn-success">Aller à la carte <i class="fas fa-map"></i></button>
+        </form>
         <table class="table">
             <thead>
             <tr>
                 <th>Classement</th>
-                <th>Region</th>
+                <th>Région</th>
                 <th>Consommation de SUPER SANS PLOMB en tonne par an</th>
             </tr>
             </thead>
@@ -176,11 +185,14 @@ $tab["gazol"] = $results_gazol;
     </main>
 
     <main class="container">
+        <form action="carte.php">
+            <button type="submit" class="btn btn-success">Aller à la carte <i class="fas fa-map"></i></button>
+        </form>
         <table class="table">
             <thead>
             <tr>
                 <th>Classement</th>
-                <th>Region</th>
+                <th>Région</th>
                 <th>Consommation de GAZOL en tonne par an</th>
                 <!--                <th>Consommation de SUPER SANS PLOMB en tonne par an</th>-->
                 <!--                <th>Consommation de gazolOL en tonne par an</th>-->

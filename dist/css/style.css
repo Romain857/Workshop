@@ -4,14 +4,18 @@ body{
 }
 
 .image{
-    width: 200px;
-    padding: center;
-    margin-right: 400px;
-    margin-left: 250px;
+    width: 13vw;
 }
 
 .menu{
   margin: auto;
+}
+
+.flex > div{
+    border: solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 

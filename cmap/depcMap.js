@@ -117,7 +117,7 @@ for (var zone in path) {
     if(path[zone].popu>0 && path[zone].popu<=15) {
         color = 'green'
     }
-    else if(path[zone].popu>15 && path[zone].popu<=60) {
+    else if(path[zone].popu>15 && path[zone].popu<=78) {
         color = 'orange'
     }
     else if(path[zone].popu===0){

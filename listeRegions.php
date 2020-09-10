@@ -22,7 +22,8 @@ require_once 'layout/header.php';
     $db = new PDO("mysql:host=".Config::SERVEUR.";dbname=".Config::BASEDEDONNEES
             ,Config::UTILISATEUR, Config::MOTDEPASSE);
 
-            $r = $db->prepare("select * from region");
+            $r = $db->prepare("select * from region
+                                         ORDER BY id");
             $r->execute();
 
             $resultats=$r->fetchAll();
@@ -32,7 +33,7 @@ require_once 'layout/header.php';
 
         <tr>
            
-            <td><?php echo $ligne["REGION"] ?></td>
+            <td><?php echo $ligne["id"] ?></td>
             <td><?php echo $ligne["NCC"] ?></td>
             <td><?php echo $ligne["POP"] ?></td>
             
