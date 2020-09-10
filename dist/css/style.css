@@ -7,8 +7,12 @@ body{
     width: 200px;
     padding: center;
     margin-right: 400px;
+    margin-left: 350px;
 }
 
+.menu{
+  margin: auto;
+}
 
 #map {
     max-width: 100%;

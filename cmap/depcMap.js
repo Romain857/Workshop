@@ -106,7 +106,7 @@ var liste = document.getElementById("depcMap");
 var depcMap = '';
 depcMap += '<link rel="stylesheet" href="cmap/style.css" type="text/css" media="screen" />';
 depcMap += '<style>path { transition: .6s fill; fill: '+mapfill+'; }path:hover { fill: '+maphover_fill+'; }</style>';
-depcMap += '<svg  version="1.1" id="Calque_1" xmlns="&ns_svg;" xmlns:xlink="&ns_xlink;" width="'+mapWidth+'" height="'+mapHeight+'" viewBox=" 0 0 500 500" overflow="visible" enable-background="new 0 0 300 200" xml:space="preserve">';
+depcMap += '<svg  version="1.1" id="Calque_1" xmlns="&ns_svg;" xmlns:xlink="&ns_xlink;" width="'+mapWidth+'" height="'+mapHeight+'" viewBox=" 0 0 545 545" overflow="visible" enable-background="new 0 0 300 200" xml:space="preserve">';
 for (var zone in path) {
     var obj = window[zone+'pat'];
     //var obj = paths[zone].path;

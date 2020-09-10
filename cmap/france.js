@@ -11,8 +11,8 @@ License: non-comercial
 		var maphover_fill = "#778899";	// Couleur de survol au passage de la souris
 		var mapstroke = "#000000";		// Couleur des lignes de séparation des régions
 		var mapstroke_width = 1.2;		// Epaisseur des lignes de séparation des régions (en points)
-		var mapWidth=500;				// Largeur de la carte en pixels
-		var mapHeight=175;				// Hauteur de la carte en pixels (facultatif)
+		var mapWidth=1500;				// Largeur de la carte en pixels
+		var mapHeight=500;				// Hauteur de la carte en pixels (facultatif)
 		
 
 /*
@@ -22,57 +22,56 @@ Modifiez ci-dessous les 2 variables pour chaque région :
 	
 	url:	" Lien vers la page ou le site souhaité ";
 
-*/
+*/		
 var paths = {
-
 Z1: {
 title: "Grand-Est",
 url: "#"
 },
-Z002: {
+Z2: {
 title: "Nouvelle-Aquitaine",
 url: "#"
 },
-Z003: {
+Z3: {
 title: "Auvergne-Rhône-Alpes",
 url: "#"
 },
-Z004: {
+Z4: {
 title: "Bourgogne-Franche-Comté",
 url: "#"
 },
-Z005: {
+Z5: {
 title: "Bretagne",
 url: "#"
 },
-Z006: {
+Z6: {
 title: "Centre",
 url: "#"
 },
-Z007: {
+Z7: {
 title: "Corse",
 url: "#"
 },
-Z008: {
+Z8: {
 title: "Occitanie",
 url: "#"
 },
-Z009: {
+Z9: {
 title: "Ile-de-France",
 url: "#"
 },
-Z0010: {
+Z10: {
 title: "Hauts-de-France",
 },
-Z0011: {
+Z11: {
 title: "Normandie",
 url: "#"
 },
-Z0012: {
+Z12: {
 title: "Pays-de-la-Loire",
 url: "#"
 },
-Z0013: {
+Z13: {
 title: "Provence-Alpes-Côte-d-Azur",
 url: "#"
 }
