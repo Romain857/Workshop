@@ -32,9 +32,9 @@ require_once 'layout/header.php';
         <p style="color: orange;">On analyse la quantité d'énergies utilisés soit le gaz, l'électricité et le pétrole</p>
         <p style="color: red;">La régions doit être éco responsable et soucieuse de l'environnement ce qui est retransmis sur la couleur des chaussures </p>
     </div>
-    <div>
     
     
+
     <div id="demo" class="carousel slide" data-ride="carousel">
   <ul class="carousel-indicators">
     <li data-target="#demo" data-slide-to="0" class="active"></li>
@@ -63,7 +63,7 @@ require_once 'layout/header.php';
     <span class="carousel-control-next-icon"></span>
   </a>
 </div>
-</div>
+
 </div>
 
 <?php require_once 'layout/footer.php'; ?>
