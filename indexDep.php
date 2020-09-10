@@ -1,18 +1,17 @@
-
 <?php 
 require_once 'layout/header.php';
 
  ?>
 
 
-
     <main>
+        
         
              <main class="container"
     <br><table class="table table-hover">
     <tr>
         
-        <th>Région</th>
+        <th>Département</th>
         <th>Nom</th>
         <th>Population</th>
         
@@ -23,7 +22,7 @@ require_once 'layout/header.php';
     $db = new PDO("mysql:host=".Config::SERVEUR.";dbname=".Config::BASEDEDONNEES
             ,Config::UTILISATEUR, Config::MOTDEPASSE);
 
-            $r = $db->prepare("select * from region");
+            $r = $db->prepare("select * from departement");
             $r->execute();
 
             $resultats=$r->fetchAll();
@@ -33,7 +32,7 @@ require_once 'layout/header.php';
 
         <tr>
            
-            <td><?php echo $ligne["REGION"] ?></td>
+            <td><?php echo $ligne["DEP"] ?></td>
             <td><?php echo $ligne["NCC"] ?></td>
             <td><?php echo $ligne["POP"] ?></td>
             
@@ -43,6 +42,5 @@ require_once 'layout/header.php';
         
 
 <?php }?>
-
 
 <?php require_once 'layout/footer.php'; ?>
