@@ -7,13 +7,13 @@ Author: S.Marmion ©2015
 Author URI: http://www.cmap.comersis.com
 License: non-comercial
 */
-		var mapfill = "#B0E0E6";		// Couleur de remplissage des régions
-		var maphover_fill = "#778899";	// Couleur de survol au passage de la souris
+		var maphover_fill = "#ffffff";	// Couleur de survol au passage de la souris
 		var mapstroke = "#000000";		// Couleur des lignes de séparation des régions
 		var mapstroke_width = 1.2;		// Epaisseur des lignes de séparation des régions (en points)
 		var mapWidth=1500;				// Largeur de la carte en pixels
 		var mapHeight=500;				// Hauteur de la carte en pixels (facultatif)
-		
+
+
 
 /*
 Modifiez ci-dessous les 2 variables pour chaque région :
@@ -23,56 +23,67 @@ Modifiez ci-dessous les 2 variables pour chaque région :
 	url:	" Lien vers la page ou le site souhaité ";
 
 */		
-var paths = {
+var path = {
 Z1: {
 title: "Grand-Est",
-url: "#"
+popu:3
 },
 Z2: {
 title: "Nouvelle-Aquitaine",
-url: "#"
+popu:9
 },
 Z3: {
 title: "Auvergne-Rhône-Alpes",
-url: "#"
+url: "#",
+	popu:5
 },
 Z4: {
 title: "Bourgogne-Franche-Comté",
-url: "#"
+url: "#",
+	popu:12
+
 },
 Z5: {
 title: "Bretagne",
-url: "#"
+url: "#",
+	popu:6
 },
 Z6: {
 title: "Centre",
-url: "#"
+url: "#",
+	popu:0
 },
 Z7: {
 title: "Corse",
-url: "#"
+popu: 0
 },
 Z8: {
 title: "Occitanie",
-url: "#"
+url: "#",
+	popu:6
 },
 Z9: {
 title: "Ile-de-France",
-url: "#"
+url: "#",
+	popu:8
 },
 Z10: {
 title: "Hauts-de-France",
+	popu:2
 },
 Z11: {
 title: "Normandie",
-url: "#"
+url: "#",
+	popu:11
 },
 Z12: {
 title: "Pays-de-la-Loire",
-url: "#"
+url: "#",
+popu:1
 },
 Z13: {
 title: "Provence-Alpes-Côte-d-Azur",
-url: "#"
+url: "#",
+	popu:4
 }
 }

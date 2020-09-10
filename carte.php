@@ -2,7 +2,7 @@
 
 <main>
 
-<div id="tip"> </div>
+<div id="tip"> </div>
 <div class="carte" id="cmap"></div>
 <script type="text/javascript" src="cmap/France.js"></script>
 <script type="text/javascript" src="cmap/cmap.js"></script>

@@ -105,16 +105,17 @@ function TipFunction(texte) {
 var liste = document.getElementById("depcMap");
 var depcMap = '';
 depcMap += '<link rel="stylesheet" href="cmap/style.css" type="text/css" media="screen" />';
-depcMap += '<style>path { transition: .6s fill; fill: '+mapfill+'; }path:hover { fill: '+maphover_fill+'; }</style>';
+depcMap += '<style>path { transition: .6s fill; }path:hover { fill: '+maphover_fill+'; }</style>';
 depcMap += '<svg  version="1.1" id="Calque_1" xmlns="&ns_svg;" xmlns:xlink="&ns_xlink;" width="'+mapWidth+'" height="'+mapHeight+'" viewBox=" 0 0 545 545" overflow="visible" enable-background="new 0 0 300 200" xml:space="preserve">';
+
 for (var zone in path) {
     var obj = window[zone+'pat'];
-    //var obj = paths[zone].path;
     var lnk = path[zone].url;
     var titl = path[zone].title;
-    depcMap += '<a xlink:href="'+lnk+'" ';
+
+    depcMap +='<a xlink:href"'+lnk+'" ';
     depcMap += 'onmouseover=TipFunction(\''+titl+'\') onmouseout=TipFunction(\'\')>';
-    depcMap += '<path id="'+zone+'" title="'+titl+'" d="'+obj+'" stroke="'+mapstroke+'" stroke-width="'+mapstroke_width+'" /> ';
+    depcMap += '<path id="'+zone+'" title="'+titl+'" d="'+obj+'" stroke="'+mapstroke+'" stroke-width="'+mapstroke_width+'" fill="red"/> ';
     depcMap += '</a>';
 }
 
