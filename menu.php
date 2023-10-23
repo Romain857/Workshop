@@ -15,8 +15,7 @@ require_once 'layout/header.php';
         Utiliser la géolocalisation de l’utilisateur 
         </p>
 
-        <p>Développé par Erwan, Gabriel, Romain</p>
-        <p>Designé par Jean et Martin</p>
+        <p>Développé par Erwan, Gabriel, Romain, Antoine, Yohann</p>
         </i>
 
 
