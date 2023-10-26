@@ -2,9 +2,9 @@
 
     <main>
 
-        <h1>Consommation de GAZ département</h1>
+        <h1 class="container text-center">Consommation de GAZ département</h1>
 
-        <div id="tip"></div>
+        <div class="container text-center" id="tip"></div>
         <div class="carte" id="depcMapGAZ"></div>
         <script type="text/javascript" src="cmap/depFrance.js"></script>
         <script type="text/javascript" src="cmap/depcMapGAZ.js"></script>

@@ -615,7 +615,7 @@ var path = {
         popu:16,
         gaz:54,
         ssp: 54,
-        elec: 0,
+        elec: 25,
         moy:41.33
     },
     Z76: {
@@ -631,7 +631,7 @@ var path = {
         popu:88,
         gaz:48,
         ssp: 88,
-        elec: 0,
+        elec: 25,
         moy:74.66
     },
     Z78: {
@@ -639,7 +639,7 @@ var path = {
         popu:78,
         gaz:44,
         ssp: 90,
-        elec: 0,
+        elec: 48,
         moy:70.66
     },
     Z79: {
@@ -695,7 +695,7 @@ var path = {
         popu:79,
         gaz:12,
         ssp: 70,
-        elec: 0,
+        elec: 1,
         moy:53.66
     },
     Z86: {
@@ -735,7 +735,7 @@ var path = {
         popu:2,
         gaz:38,
         ssp: 3,
-        elec: 0,
+        elec: 1,
         moy:14.33
     },
     Z91: {

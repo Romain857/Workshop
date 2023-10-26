@@ -96,14 +96,15 @@ $tab["gazol"] = $results_gazol;
             foreach ($stats_elec_sort as $index => $lign){
                 $stats_elec_sort[$index]["classement"] = $index + 1;
             }
-
+            
             foreach ($stats_elec_sort as $index => $lign) {
                 echo "<tr>";
-                echo "<td>" . $index . "</td>";
+                echo "<td>" . ($lign["classement"]) . "</td>";
                 echo "<td>" . $lign["NCC"] . "</td>";
                 echo "<td>" . $lign["donnees_elec"] . "</td>";
                 echo "</tr>";
-            } ?>
+            }
+             ?>
             </tbody>
         </table>
     </main>
@@ -137,7 +138,7 @@ $tab["gazol"] = $results_gazol;
 
             foreach ($stats_gaz_sort as $index => $lign) {
                 echo "<tr>";
-                echo "<td>" . $index . "</td>";
+                echo "<td>" . ($lign["classement"]) . "</td>";
                 echo "<td>" . $lign["NCC"] . "</td>";
                 echo "<td>" . $lign["donnees_gaz"] . "</td>";
                 echo "</tr>";
@@ -175,7 +176,7 @@ $tab["gazol"] = $results_gazol;
 
             foreach ($stats_ssp_sort as $index => $lign) {
                 echo "<tr>";
-                echo "<td>" . $index . "</td>";
+                echo "<td>" . ($lign["classement"]) . "</td>";
                 echo "<td>" . $lign["NCC"] . "</td>";
                 echo "<td>" . $lign["donnees_ssp"] . "</td>";
                 echo "</tr>";
@@ -217,7 +218,7 @@ $tab["gazol"] = $results_gazol;
 
             foreach ($stats_gazol_sort as $index => $lign) {
                 echo "<tr>";
-                echo "<td>" . $index . "</td>";
+                echo "<td>" . ($lign["classement"]) . "</td>";
                 echo "<td>" . $lign["NCC"] . "</td>";
                 echo "<td>" . $lign["donnees_gazol"] . "</td>";
                 echo "</tr>";

@@ -37,32 +37,6 @@ $r = $db->prepare(" select departement.NCC, departement.POP,departement.DEP, SUM
 $r->execute();
 //$r->debugDumpParams();
 $results_gazol = $r->fetchAll();
-
-/*
-$r = $db->prepare(" select region.NCC, region.POP, SUM(donnees_gaz.CONSOR) as "donnees_gaz", 0 as "donnees_elec", 0 as "donnees_gazol" from donnees_gaz
-    join departement on departement.Dep = donnees_gaz.Dep
-    join region on region.region = departement.region
-    GROUP BY REGION.NCC
-UNION
-select region.NCC, region.POP, 0 as "donnees_gaz", SUM(donnees_elec.CONSOR) as "donnees_elec", 0 as "donnees_gazol" from donnees_elec
-    join departement on departement.Dep = donnees_elec.Dep
-    join region on region.region = departement.region
-    GROUP BY REGION.NCC
-UNION
-select region.NCC, region.POP, 0 as "donnees_gaz", 0 as "donnees_elec", SUM(donnees_petrole.GAZOLE) as "donnees_gazol" from donnees_petrole
-    join departement on departement.Dep = donnees_petrole.Dep
-    join region on region.region = departement.region
-    GROUP BY REGION.NCC
-");
-
-$r->execute();
-//$r->debugDumpParams();
-$results = $r->fetchAll();
-$tab["elec"] = $results_elec;
-$tab["gaz"] = $results_gaz;
-$tab["ssp"] = $results_ssp;
-$tab["gazol"] = $results_gazol;
-*/
 ?>
 
     <main class="container">
@@ -98,7 +72,7 @@ $tab["gazol"] = $results_gazol;
 
             foreach ($stats_elec_sort as $index => $lign) {
                 echo "<tr>";
-                echo "<td>" . $index . "</td>";
+                echo "<td>" . ($lign["classement"]) . "</td>";
                 echo "<td>" . $lign["NCC"] . "</td>";
                 echo "<td>" . $lign["donnees_elec"] . "</td>";
                 echo "</tr>";
@@ -137,7 +111,7 @@ $tab["gazol"] = $results_gazol;
 
             foreach ($stats_gaz_sort as $index => $lign) {
                 echo "<tr>";
-                echo "<td>" . $index . "</td>";
+                echo "<td>" . ($lign["classement"]) . "</td>";
                 echo "<td>" . $lign["NCC"] . "</td>";
                 echo "<td>" . $lign["donnees_gaz"] . "</td>";
                 echo "</tr>";
@@ -175,7 +149,7 @@ $tab["gazol"] = $results_gazol;
 
             foreach ($stats_ssp_sort as $index => $lign) {
                 echo "<tr>";
-                echo "<td>" . $index . "</td>";
+                echo "<td>" . ($lign["classement"]) . "</td>";
                 echo "<td>" . $lign["NCC"] . "</td>";
                 echo "<td>" . $lign["donnees_ssp"] . "</td>";
                 echo "</tr>";
@@ -218,7 +192,7 @@ $tab["gazol"] = $results_gazol;
 
             foreach ($stats_gazol_sort as $index => $lign) {
                 echo "<tr>";
-                echo "<td>" . $index . "</td>";
+                echo "<td>" . ($lign["classement"]) . "</td>";
                 echo "<td>" . $lign["NCC"] . "</td>";
                 echo "<td>" . $lign["donnees_gazol"] . "</td>";
                 echo "</tr>";
